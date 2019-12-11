@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "281234774084",
+    "firebase_url": "https://my-first-authentification.firebaseio.com",
+    "project_id": "my-first-authentification",
+    "storage_bucket": "my-first-authentification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281234774084:android:87e0b568ebe98422ac4411",
+        "android_client_info": {
+          "package_name": "com.example.myfirstathentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281234774084-3b3abdsbv4e9jvcpe3pauf4h1f7ljop1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuPDgJiY08zP936xmZwMaeg1nxixf0xhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281234774084-3b3abdsbv4e9jvcpe3pauf4h1f7ljop1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

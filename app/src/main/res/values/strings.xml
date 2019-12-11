@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My First Athentication</string>
+    <string name="welcomelbl">Welcome to My First Athentication App</string>
+    <string name="signUplbl">Enter details to sign up</string>
+    <string name="emailtxt">Email</string>
+    <string name="passwordtxt">Password</string>
+    <string name="signUpbtn">Sign Up</string>
+    <string name="loginbtn">Login</string>
+    <string name="loginlbl">Enter details to login</string>
+    <string name="loginToSignUplbl">Havent signed up yet? Click here</string>
+    <string name="signUpToLoginlbl">If you are already signed up click here to login</string>
+    <string name="logoutbtn">Logout</string>
+</resources>
