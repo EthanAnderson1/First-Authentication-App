@@ -10,4 +10,5 @@
     <string name="loginToSignUplbl">Havent signed up yet? Click here</string>
     <string name="signUpToLoginlbl">If you are already signed up click here to login</string>
     <string name="logoutbtn">Logout</string>
+    <string name="findUser">Search For User</string>
 </resources>
