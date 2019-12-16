@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">My First Athentication</string>
-    <string name="welcomelbl">Welcome to My First Athentication App</string>
+    <string name="app_name">My First Authentication</string>
+    <string name="welcomelbl">Welcome to My First Authentication App</string>
     <string name="signUplbl">Enter details to sign up</string>
     <string name="emailtxt">Email</string>
     <string name="passwordtxt">Password</string>
@@ -11,4 +11,7 @@
     <string name="signUpToLoginlbl">If you are already signed up click here to login</string>
     <string name="logoutbtn">Logout</string>
     <string name="findUser">Search For User</string>
+    <string name="editEmail">Enter new email</string>
+    <string name="submitEmail">Submit</string>
+    <string name="changeEmail">Change Email</string>
 </resources>
