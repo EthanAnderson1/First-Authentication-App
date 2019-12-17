@@ -21,7 +21,7 @@
         android:id="@+id/searchUsertxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="@string/findUser"
         android:inputType="textEmailAddress"
@@ -33,41 +33,51 @@
         android:id="@+id/editEmailtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
         android:ems="10"
         android:hint="@string/editEmail"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toStartOf="@+id/submit"
+        app:layout_constraintEnd_toStartOf="@+id/submitEmailbtn"
         app:layout_constraintTop_toBottomOf="@+id/changeEmaillbl" />
 
     <TextView
         android:id="@+id/changeEmaillbl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/changeEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="333dp" />
+        app:layout_constraintTop_toBottomOf="@+id/userFoundtxt" />
 
     <Button
         android:id="@+id/deleteAccountbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Button"
+        android:text="@string/deleteAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoutbtn" />
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/submitEmailbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:text="Button"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/submitEmail"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintTop_toBottomOf="@+id/changeEmaillbl" />
+
+    <TextView
+        android:id="@+id/userFoundtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchUsertxt" />
 </androidx.constraintlayout.widget.ConstraintLayout>

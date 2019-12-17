@@ -14,4 +14,5 @@
     <string name="editEmail">Enter new email</string>
     <string name="submitEmail">Submit</string>
     <string name="changeEmail">Change Email</string>
+    <string name="deleteAccount">Delete Account</string>
 </resources>
