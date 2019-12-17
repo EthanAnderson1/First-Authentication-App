@@ -29,14 +29,15 @@ public class HomeActivity extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
     Button submitChangeEmailbtn;
     EditText newEmailtxt;
-    EditText userSearchtxt;
-    TextView userFoundtxt;
+    TextView currentUsertxt;
+
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         final Intent intToLogin = new Intent(HomeActivity.this,LoginActivity.class);
+        currentUsertxt = findViewById(R.id.currentUsertxt);
         logoutbtn = findViewById(R.id.logoutbtn);
         logoutbtn.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -69,32 +70,11 @@ public class HomeActivity extends AppCompatActivity {
                 String newEmail = newEmailtxt.getText().toString();
                 FirebaseUser currentUser = getInstance().getCurrentUser();
                 currentUser.updateEmail(newEmail);
+                currentUsertxt.setText(newEmail);
                 Toast.makeText(HomeActivity.this, "Email Address Updated", Toast.LENGTH_SHORT).show();
             }
         });
-        userSearchtxt = findViewById(R.id.searchUsertxt);
-        userSearchtxt.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                System.out.println("running");
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                System.out.println("running");
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                userFoundtxt = findViewById(R.id.userFoundtxt);
-                System.out.println("running");
-                Task<SignInMethodQueryResult> result = mFirebaseAuth.fetchSignInMethodsForEmail(userSearchtxt.getText().toString());
-                if (result!=null){
-                    userFoundtxt.setText("User Found!");
-                }else {
-                    userFoundtxt.setText("User Doesn't Exist");
-                }
-            }
-        });
+        String email = mFirebaseAuth.getInstance().getCurrentUser().getEmail().toString();
+        currentUsertxt.setText(email);
     }
 }
